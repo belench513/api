@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
+    <img src="boton.png" alt="Mostrar tabla de tipos" id="showTypesButton">
+    <img src="tabla.png" alt="Tabla de tipos de Pokémon" id="typesTable" style="display: none;">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
     <h1>Pokémon Information</h1>
-  <div id="pokemon-info"></div>
-  <input type="text" id="pokemonInput">
-  <button onclick="searchPokemon()">Search</button>
-  <div id="pokemon-info"></div>
+    <input type="text" id="pokemonInput">   
+    <button onclick="searchPokemon()">Search</button>
+    <div id="pokemon-container" class="pokemon-container">
+        <div id="pokemon-info"></div>    
+    </div> 
+    
     <script src="script.js"></script>
 </body>
 </html>
